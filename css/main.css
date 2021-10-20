@@ -1,13 +1,18 @@
 @charset "UTF-8";
 :root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
   --text-color: hsl(0, 0%, 7%);
   --accent-color: hsl(216, 61%, 54%);
   --grey300: hsl(0, 0%, 70%);
   --grey500: hsl(0, 0%, 50%);
-  --base-font-size: 16px;
-  --small-font-size: 14.4px;
-  --body-font-family: "Open Sans", sans-serif;
-  --headings-font-family: "Raleway", sans-serif;
+  --base-font-size: 13px;
+  --small-font-size: 11.7px;
+  --body-font-family: "Manrope", sans-serif;
+  --headings-font-family: "Manrope", sans-serif;
   --h1-font-size: 2.7rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.5rem;
