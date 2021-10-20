@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @include center(flex);
+  // @include center(flex);
   font-family: var(--body-font-family);
   color: var(--text-color);
   background-color: var(--light-grayish-blue);

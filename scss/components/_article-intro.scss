@@ -2,6 +2,7 @@
 
 .article-preview {
   background: white;
+  margin: 0 2rem;
   @include mq($desktop-width, up) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -16,11 +17,22 @@
 }
 
 .article__text-container {
+  padding: 2.5rem;
   @include mq($desktop-width, up) {
     @include column-start-end(3, -1);
   }
 }
 
+.article__title {
+  margin-top: 0;
+  line-height: 1.4em;
+}
+
+.article__intro {
+  margin-bottom: 1.5em;
+}
+
+/* ========================== § META === */
 .article__meta {
   display: flex;
 }

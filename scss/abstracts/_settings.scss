@@ -22,10 +22,16 @@ $mobile-width: $desktop-width - 1px;
   --small-font-size: #{$small-font-size};
   --body-font-family: "Manrope", sans-serif;
   --headings-font-family: "Manrope", sans-serif;
-  --h1-font-size: 2.7rem;
+  --h1-font-size: 1.2rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.5rem;
   --h4-font-size: 1.3rem;
   --h5-font-size: 1.1rem;
   --h6-font-size: 1rem;
+}
+
+@media screen and(min-width:$desktop-width) {
+  :root {
+    --h1-font-size: 1.6rem;
+  }
 }
