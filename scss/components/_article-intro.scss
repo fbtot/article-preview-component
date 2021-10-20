@@ -1,0 +1,32 @@
+@use "../index" as *;
+
+.article-preview {
+  background: white;
+  @include mq($desktop-width, up) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 730px;
+  }
+}
+
+.article__img {
+  @include mq($desktop-width, up) {
+    @include column-start-end(1, 3);
+  }
+}
+
+.article__text-container {
+  @include mq($desktop-width, up) {
+    @include column-start-end(3, -1);
+  }
+}
+
+.article__meta {
+  display: flex;
+}
+
+.article__avatar {
+  img {
+    @include circle(3rem);
+  }
+}

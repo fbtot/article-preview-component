@@ -109,8 +109,12 @@
 }
 
 // ========================== § MAKE A CIRCLE ===
-@mixin circle() {
+@mixin circle($diameter: "") {
   /* @mixin circle */
+  @if $diameter != "" {
+    width: $diameter;
+    height: $diameter;
+  }
   border-radius: 1000px;
   /* end @mixin circle */
 }

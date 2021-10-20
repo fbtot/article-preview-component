@@ -33,10 +33,17 @@ html {
 }
 
 body {
+  /* @mixin center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* end @mixin center */
   font-family: var(--body-font-family);
   color: var(--text-color);
-  background-color: #eeeeee;
+  background-color: var(--light-grayish-blue);
   line-height: 1.6em;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /* ========================== § TYPOGRAPHY === */
@@ -154,6 +161,49 @@ select {
 
 button {
   cursor: pointer;
+}
+
+.article-preview {
+  background: white;
+}
+@media screen and (min-width: 800px) {
+  .article-preview {
+    /* mixin mq */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 730px;
+    /* end mixin mq */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .article__img {
+    /* mixin mq */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* end mixin mq */
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .article__text-container {
+    /* mixin mq */
+    grid-column-start: 3;
+    grid-column-end: -1;
+    /* end mixin mq */
+  }
+}
+
+.article__meta {
+  display: flex;
+}
+
+.article__avatar img {
+  /* @mixin circle */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1000px;
+  /* end @mixin circle */
 }
 
 /*# sourceMappingURL=main.css.map */

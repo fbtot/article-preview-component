@@ -12,10 +12,13 @@ html {
 }
 
 body {
+  @include center(flex);
   font-family: var(--body-font-family);
   color: var(--text-color);
-  background-color: rgb(238, 238, 238);
+  background-color: var(--light-grayish-blue);
   line-height: 1.6em;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /* ========================== § TYPOGRAPHY === */
