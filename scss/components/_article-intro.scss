@@ -1,6 +1,7 @@
 @use "../index" as *;
 
 .article-preview {
+  // @include debug;
   background: white;
   margin: 0 2rem;
   @include mq($desktop-width, up) {
@@ -13,13 +14,24 @@
 .article__img {
   @include mq($desktop-width, up) {
     @include column-start-end(1, 3);
+    img {
+    }
   }
 }
 
 .article__text-container {
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 1.5rem;
+
   @include mq($desktop-width, up) {
+    padding: 2.5rem 3rem 2.5rem 2.5rem;
     @include column-start-end(3, -1);
+  }
+
+  @include mq($desktop-width, down) {
+    // display: flex;
+    // flex-direction: column;
+    // height: 100%;
+    // margin-top: auto;
   }
 }
 
@@ -38,7 +50,39 @@
 }
 
 .article__avatar {
+  margin-right: 1.2rem;
   img {
     @include circle(3rem);
   }
+}
+
+.article__author {
+  font-weight: bold;
+}
+
+.article__date {
+  color: var(--grayish-blue);
+}
+
+.article__share-container {
+  @include circle(2.5rem);
+  @include center(flex);
+  margin-left: auto;
+  background: var(--light-grayish-blue);
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background: var(--desaturated-dark-blue);
+    cursor: pointer;
+
+    .article__icon {
+      color: white;
+    }
+  }
+}
+
+.article__icon {
+  font-size: 1.5rem;
+  transition: 0.2s ease-in-out;
+  color: var(--desaturated-dark-blue);
 }
