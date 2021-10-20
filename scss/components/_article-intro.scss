@@ -26,13 +26,6 @@
     padding: 2.5rem 3rem 2.5rem 2.5rem;
     @include column-start-end(3, -1);
   }
-
-  @include mq($desktop-width, down) {
-    // display: flex;
-    // flex-direction: column;
-    // height: 100%;
-    // margin-top: auto;
-  }
 }
 
 .article__title {

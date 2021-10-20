@@ -197,12 +197,6 @@ button {
     /* end mixin mq */
   }
 }
-@media screen and (max-width: 799px) {
-  .article__text-container {
-    /* mixin mq */
-    /* end mixin mq */
-  }
-}
 
 .article__title {
   margin-top: 0;
