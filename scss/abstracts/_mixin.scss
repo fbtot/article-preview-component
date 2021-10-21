@@ -131,7 +131,7 @@
 // ========================== § DEBUG ===
 // Highlight the current element and all its children
 @mixin debug($color: red) {
-  // @mixin debug
+  /*  @mixin debug */
   background-color: rgba($color, 0.1) !important;
   outline: 1px solid rgb($color, 0.3) !important;
 
@@ -147,11 +147,21 @@
       outline: 4px solid rgb($color, 0.8) !important;
     }
   }
-  // end @mixin debug
+  /* end @mixin debug */
 }
 
 // ========================== § COLUMN START-END ===
 @mixin column-start-end($start, $end) {
+  /* start @mixin column-start-end */
   grid-column-start: $start;
   grid-column-end: $end;
+  /* end @mixin column-start-end */
+}
+
+// ========================== § ROW START-END ===
+@mixin row-start-end($start, $end) {
+  /* start @mixin row-start-end */
+  grid-row-start: $start;
+  grid-row-end: $end;
+  /* end @mixin row-start-end */
 }
