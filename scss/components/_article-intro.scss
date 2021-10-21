@@ -17,7 +17,7 @@
 }
 
 .article__img {
-  background: url(../../images/drawers.jpg) 0 0 no-repeat;
+  background: url(../../images/drawers.jpg) 50% 0 no-repeat;
   background-size: cover;
   @include mq($desktop-width, down) {
     @include row-start-end(1, 4);
