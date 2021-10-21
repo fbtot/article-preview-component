@@ -15,25 +15,21 @@
     @media screen and (min-width: $width1) {
       /* mixin mq */
       @content;
-      /* end mixin mq */
     }
   } @else if $width2 == "down" {
     @media screen and (max-width: $width1 - 1px) {
       /* mixin mq */
       @content;
-      /* end mixin mq */
     }
   } @else if $width1 > $width2 {
     @media screen and (min-width: $width2) and (max-width: $width1 - 1px) {
       /* mixin mq */
       @content;
-      /* end mixin mq */
     }
   } @else if $width1 < $width2 {
     @media screen and (min-width: $width1) and (max-width: $width2 - 1px) {
       /* mixin mq */
       @content;
-      /* end mixin mq */
     }
   }
 }

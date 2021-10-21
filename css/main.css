@@ -183,7 +183,6 @@ button {
     /* mixin mq */
     grid-template-rows: repeat(5, 1fr);
     overflow: hidden;
-    /* end mixin mq */
   }
 }
 @media screen and (min-width: 800px) {
@@ -191,12 +190,11 @@ button {
     /* mixin mq */
     grid-template-columns: repeat(5, 1fr);
     max-width: 730px;
-    /* end mixin mq */
   }
 }
 
 .article__img {
-  background: url(../../images/drawers.jpg) 50% 0 no-repeat;
+  background: url(../images/drawers.jpg) 50% 0 no-repeat;
   background-size: cover;
 }
 @media screen and (max-width: 799px) {
@@ -206,7 +204,6 @@ button {
     grid-row-start: 1;
     grid-row-end: 3;
     /* end @mixin row-start-end */
-    /* end mixin mq */
   }
 }
 @media screen and (min-width: 800px) {
@@ -217,7 +214,6 @@ button {
     grid-column-end: 3;
     /* end @mixin column-start-end */
     border-radius: 1rem 0 0 1rem;
-    /* end mixin mq */
   }
 }
 
@@ -231,7 +227,6 @@ button {
     grid-row-start: 3;
     grid-row-end: -1;
     /* end @mixin row-start-end */
-    /* end mixin mq */
   }
 }
 @media screen and (min-width: 800px) {
@@ -242,7 +237,6 @@ button {
     grid-column-start: 3;
     grid-column-end: -1;
     /* end @mixin column-start-end */
-    /* end mixin mq */
   }
 }
 
@@ -311,7 +305,6 @@ button {
     height: 2.5rem;
     border-radius: 1000px;
     /* end @mixin circle */
-    /* end mixin mq */
   }
 }
 .article__icon:hover {
@@ -340,7 +333,6 @@ button {
     font-size: 250%;
     display: inline-block;
     margin: 0 0.5rem;
-    /* end mixin mq */
   }
 }
 @media screen and (min-width: 800px) {
@@ -354,7 +346,6 @@ button {
     transform: translateX(calc(-50% + 1.2rem));
     transform-origin: bottom center;
     pointer-events: none;
-    /* end mixin mq */
   }
   .tooltip:after {
     content: "";
@@ -383,13 +374,11 @@ button {
     display: flex;
     align-items: center;
     z-index: -10;
-    /* end mixin mq */
   }
 }
 @media screen and (max-width: 409px) {
   .tooltip {
     /* mixin mq */
-    /* end mixin mq */
   }
   .tooltip span {
     display: none;
@@ -400,7 +389,6 @@ button {
   .tooltip.clicked {
     /* mixin mq */
     bottom: -2rem;
-    /* end mixin mq */
   }
 }
 @media screen and (min-width: 800px) {
@@ -409,7 +397,6 @@ button {
     opacity: 100%;
     top: -150%;
     pointer-events: initial;
-    /* end mixin mq */
   }
 }
 
