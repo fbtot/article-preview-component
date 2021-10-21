@@ -4,7 +4,7 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-grayish-blue: hsl(210, 46%, 95%);
-  --text-color: hsl(0, 0%, 7%);
+  --text-color: var(--desaturated-dark-blue);
   --accent-color: hsl(216, 61%, 54%);
   --grey300: hsl(0, 0%, 70%);
   --grey500: hsl(0, 0%, 50%);
@@ -76,6 +76,7 @@ h6 {
 }
 
 h1 {
+  color: var(--very-dark-grayish-blue);
   font-size: var(--h1-font-size);
   line-height: 1.2em;
 }
@@ -236,7 +237,7 @@ button {
 @media screen and (min-width: 800px) {
   .article__text-container {
     /* mixin mq */
-    padding: 2.5rem 3rem 2.5rem 2.5rem;
+    padding: 2.5rem 3rem 1.5rem 2.5rem;
     /* start @mixin column-start-end */
     grid-column-start: 3;
     grid-column-end: -1;
@@ -271,6 +272,7 @@ button {
 }
 
 .article__author {
+  color: var(--very-dark-grayish-blue);
   font-weight: bold;
 }
 

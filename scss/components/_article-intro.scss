@@ -35,7 +35,7 @@
     @include row-start-end(4, -1);
   }
   @include mq($desktop-width, up) {
-    padding: 2.5rem 3rem 2.5rem 2.5rem;
+    padding: 2.5rem 3rem 1.5rem 2.5rem;
     @include column-start-end(3, -1);
   }
 }
@@ -62,6 +62,7 @@
 }
 
 .article__author {
+  color: var(--very-dark-grayish-blue);
   font-weight: bold;
 }
 
