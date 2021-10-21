@@ -173,7 +173,7 @@ button {
 
 .article-preview {
   background: white;
-  margin: 0 2rem;
+  margin: 2rem;
   border-radius: 1rem;
   display: grid;
 }
@@ -382,6 +382,15 @@ button {
     align-items: center;
     z-index: -10;
     /* end mixin mq */
+  }
+}
+@media screen and (max-width: 409px) {
+  .tooltip {
+    /* mixin mq */
+    /* end mixin mq */
+  }
+  .tooltip span {
+    display: none;
   }
 }
 
