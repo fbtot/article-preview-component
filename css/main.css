@@ -204,7 +204,7 @@ button {
     /* mixin mq */
     /* start @mixin row-start-end */
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
     /* end @mixin row-start-end */
     /* end mixin mq */
   }
@@ -228,7 +228,7 @@ button {
   .article__text-container {
     /* mixin mq */
     /* start @mixin row-start-end */
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: -1;
     /* end @mixin row-start-end */
     /* end mixin mq */
