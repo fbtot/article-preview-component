@@ -2,11 +2,13 @@
 
 .article-preview {
   // @include debug;
-  overflow: hidden;
   background: white;
   margin: 0 2rem;
   border-radius: 1rem;
 
+  @include mq($desktop-width, down) {
+    overflow: hidden;
+  }
   @include mq($desktop-width, up) {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -62,16 +64,6 @@
   margin-left: auto;
   position: relative;
   z-index: 10;
-
-  &:hover {
-    .tooltip {
-      @include mq($desktop-width, up) {
-        opacity: 100%;
-        top: -200%;
-        transform: scale(1, 1);
-      }
-    }
-  }
 }
 
 .article__icon {
@@ -101,6 +93,7 @@
   letter-spacing: 0.5em;
   z-index: 0;
   transition: 0.1s ease-in-out;
+
   a {
     color: white;
     font-size: 150%;
@@ -118,10 +111,11 @@
     width: max-content;
     transition: 0.2s cubic-bezier(0.59, 0.02, 0.61, 1.87);
     opacity: 0;
-    transform: scale(0);
+    transform: translateX(calc(-50% + 1.2rem));
     transform-origin: bottom center;
     pointer-events: none;
 
+    // arrow
     &:after {
       content: "";
       top: 100%;
@@ -154,5 +148,10 @@
 .tooltip.clicked {
   @include mq($desktop-width, down) {
     bottom: -2rem;
+  }
+  @include mq($desktop-width, up) {
+    opacity: 100%;
+    top: -150%;
+    pointer-events: initial;
   }
 }
