@@ -12,14 +12,14 @@ html {
 }
 
 body {
-  // @include center(flex);
+  @include center(flex);
+  @include antialias;
   font-family: var(--body-font-family);
   color: var(--text-color);
   background-color: var(--light-grayish-blue);
   line-height: 1.6em;
   min-height: 100vh;
   min-width: 100vw;
-  @include antialias;
 }
 
 /* ========================== § TYPOGRAPHY === */

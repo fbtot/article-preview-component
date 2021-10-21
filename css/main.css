@@ -37,16 +37,21 @@ html {
 }
 
 body {
+  /* @mixin center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* end @mixin center */
+  /* @mixin antialias */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* end @mixin antialias */
   font-family: var(--body-font-family);
   color: var(--text-color);
   background-color: var(--light-grayish-blue);
   line-height: 1.6em;
   min-height: 100vh;
   min-width: 100vw;
-  /* @mixin antialias */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* end @mixin antialias */
 }
 
 /* ========================== § TYPOGRAPHY === */
