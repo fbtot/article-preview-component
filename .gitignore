@@ -2,7 +2,7 @@
 ######################
 /originals
 node_modules
-
+dist
 # Compiled source #
 ###################
 *.com
