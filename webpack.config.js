@@ -3,6 +3,7 @@ const mode = process.env.NODE_ENV === 'production' ? 'production' : 'development
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { NONAME } = require('dns');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode,
@@ -31,6 +32,12 @@ module.exports = {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({ template: './src/index.html' })],
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+    new CleanWebpackPlugin(),
+  ],
   devtool: false,
 };
